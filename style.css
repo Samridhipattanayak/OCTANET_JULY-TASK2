@@ -1,0 +1,181 @@
+body {
+  font-family: 'Georgia';
+  margin: 0;
+  padding: 0;
+  background-image: url("bg.png");
+  background-size: inherit;
+  background-position: center;
+}
+
+header {
+  background-color: palevioletred;
+  color: #fff;
+  padding: 8px;
+}
+
+nav {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+h1{
+  font-family: Georgia;
+  color: rgb(67, 15, 67);
+  margin-top: 2em;
+}
+
+#menu-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+#menu-icon span {
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  margin: 3px 0;
+  display: block;
+}
+
+#menu-items ul {
+  list-style-type:armenian;
+  padding: 0;
+  display:none;
+}
+
+#menu-items ul li {
+  margin-bottom: 60px;
+}
+
+#menu-items ul li a {
+  color: #fff;
+  text-decoration:dashed;
+}
+
+#task-input {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-weight: 100;
+
+
+}
+
+#task-input input,
+#task-input select {
+  margin-right: 10px;
+  font-size: 20px;
+  background-color: rgb(240, 233, 240) ;
+  font-family: 'Georgia';
+}
+
+#search-bar {
+  margin-bottom: 60px;
+  color:  rgb(235, 190, 235);
+  font-size: 20px;
+  font-family: 'Georgia';
+
+}
+
+
+#search-bar input[type="text"] {
+  padding: 5px;
+  width: 200px;
+  margin-right: 10px;
+  font-size: 20px;
+  background-color:  rgb(233, 224, 233);
+  font-family: 'Georgia';
+  
+}
+
+#Search {
+  font-size: large;
+  background-color: (235, 190, 235);
+  font-family: 'Georgia';
+}
+
+#task-buttons {
+  margin-bottom: 20px;
+
+}
+
+#task-input button{
+  color:rgb(143, 13, 106);
+  background-color: rgb(235, 190, 235) ;
+  margin-right: 10px;
+  transition-duration: 0.4s;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: 'Georgia';
+}
+
+#search-bar button{
+  color:rgb(143, 13, 106);
+  background-color: rgb(235, 190, 235) ;
+  margin-right: 10px;
+  transition-duration: 0.4s;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: 'Georgia';
+
+}
+
+#task-buttons button {
+  color:rgb(143, 13, 106);
+  background-color: rgb(235, 190, 235) ;
+  margin-right: 10px;
+  transition-duration: 0.4s;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: 'Georgia';
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: rgba(189, 122, 231, 0.8);
+  padding: 10px;
+}
+
+.task-name {
+  flex-grow: 1;
+  font-size: 20px;
+  
+}
+
+.task-category {
+  margin-right: 10px;
+}
+
+.task-deadline {
+  margin-right: 10px;
+}
+
+.task-priority {
+  margin-right: 10px;
+}
+
+.task-completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+  
+}
+
+.task-delete-btn {
+  margin-left: 10px;
+
+}
+
+.task-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}

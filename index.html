@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To-Do List</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div id="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="menu-items">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <h1>MY TO-DO LIST</h1>
+  <div id="task-input">
+    <input type="text" id="task-name" placeholder="Enter task name">
+    <select id="task-category">
+      <option value="personal">Personal</option>
+      <option value="work">Work</option>
+      <option value="project">Project</option>
+    </select>
+    <input type="date" id="task-deadline">
+    <select id="task-priority">
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select><br><br>
+    <button onclick="addTask()">Add Task</button>
+  </div>
+
+  <div id="search-bar">
+    <input type="text" id="search-input" placeholder="Search tasks"><br><br>
+    <button onclick="searchTasks()">Search</button>
+  </div>
+
+  <ul id="task-list"></ul>
+
+  <div id="task-buttons">
+    <button onclick="showAllTasks()">All Tasks</button><br><br>
+    <button onclick="showCompletedTasks()">Completed Tasks</button><br><br>
+    <button onclick="showPendingTasks()">Pending Tasks</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
